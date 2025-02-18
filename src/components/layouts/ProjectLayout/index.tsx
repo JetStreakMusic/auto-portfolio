@@ -37,6 +37,11 @@ const Component: React.FC<ComponentProps> = (props) => {
                             <div className="md:flex md:justify-between">
                                 <div className="text-lg mb-6 md:mb-0 md:ml-12 md:order-last">
                                     <time dateTime={dateTimeAttr}>{formattedDate}</time>
+                                    {endDate && <div> 
+                                    <p> - </p>
+                                    <time dateTime={dateTimeAttr2}>{formattedDate2}</time>
+                                    </div>
+                                    }
                                 </div>
                                 <h1 className="md:max-w-2xl md:flex-grow">{title}</h1>
                             </div>
