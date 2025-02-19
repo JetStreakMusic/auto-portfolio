@@ -25,6 +25,12 @@ export const ProjectFeedLayoutModel: Model = {
             default: 'This is a page title'
         },
         {
+            type: 'string',
+            name: 'slug',
+            label: 'Slug',
+            default: 'This is a slug'
+        },
+        {
             type: 'model',
             name: 'projectFeed',
             readOnly: true,
